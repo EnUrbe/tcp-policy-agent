@@ -1,5 +1,3 @@
-## 🧪 `test/test_endpoints.py`
-
 ```python
 import unittest
 from app import app
@@ -18,4 +16,8 @@ class FlaskTestCase(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+## to run
+
+python3 -m unittest test/test_endpoints.py
 
