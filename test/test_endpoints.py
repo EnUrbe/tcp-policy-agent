@@ -1,6 +1,3 @@
-
----
-
 ## 🧪 `test/test_endpoints.py`
 
 ```python
