@@ -1,54 +1,45 @@
-# tcp-policy-agent
-An AI-powered civic tech tool to help youth organizers turn real-time legislation into action.
+# TCP Policy Agent
 
+**An AI-powered civic tech tool that helps youth organizers turn real-time legislation into action.**  
+Built by [TheCHANGEproject](https://thechangeproject.org), this open-source agent fetches live state and federal policy language and transforms it into student-friendly briefs, outreach scripts, and organizing tools.
 
-An AI-powered civic tech tool to help youth organizers transform live policy into action.
+---
 
-# What is this?
+## What It Does
 
-The TCP Policy Agent is an open-source web application that:
+TCP Policy Agent empowers students and community organizers by:
 
-Scrapes live state + federal legislation
+- 🔍 Fetching live bills from **Congress** and **state legislatures**
+- 📝 Generating **policy briefs** from raw legislation
+- 📬 Writing **email and phone scripts** to contact lawmakers
+- 🧾 Drafting **resolutions** and campaign talking points
+- 🧭 Providing week-by-week **organizing roadmaps**
 
-Summarizes policy in youth-accessible language
+It’s civic power—made accessible.
 
-Generates policy briefs, call/email scripts, and resolutions
+---
 
-Helps youth organizers plan local campaigns based on real legislation
+## Tech Stack
 
-Built for TheCHANGEproject — a youth-led nonprofit advancing health equity and justice through organizing, storytelling, and advocacy.
+- **Flask** for backend API
+- **OpenStates API** for state bills
+- **GovTrack API** for federal bills
+- **OpenAI GPT-4o (coming soon)** for summaries + campaign tools
+- **React.js** frontend (planned)
 
-# Stack
+---
 
-Frontend: React or Next.js
+## Getting Started
 
-Backend: Python (Flask or FastAPI)
+### 🔧 Requirements
 
-AI Layer: OpenAI GPT-4o API
+- Python 3.10+
+- Flask
+- OpenStates API Key
 
-APIs: OpenStates (state-level), GovTrack (federal)
+### Install & Run
 
-Hosting: Netlify/Vercel + Render
-
-🔧 Current Status
-
-
-# Contribute
-
-We welcome student devs, civic hackers, and designers!
-
-Get started:
-
-Fork the repo
-
-Set up your .env for API keys
-
-Run locally with flask run (or FastAPI alternative)
-
-Open a PR or reach out for onboarding
-
-# Contact
-
-Project lead: William Navarrete Moreno📧 william.navarretemoreno1021@gmail.com🌐 www.thechangeproject.org
-
-
+```bash
+git clone https://github.com/YOUR_USERNAME/tcp-policy-agent.git
+cd tcp-policy-agent
+pip install -r requirements.txt
