@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TCP Policy Agent</title>
+</head>
+<body>
+  <h1>TCP Policy Agent (MVP)</h1>
+  <p>Search bills and generate policy briefs or email scripts</p>
+
+  <label>Search Type:</label>
+  <select id="searchType">
+    <option value="state">State</option>
+    <option value="federal">Federal</option>
+  </select>
+  <br><br>
+
+  <label>State or Keyword:</label>
+  <input type="text" id="searchInput" placeholder="e.g., Colorado or Immigration"><br><br>
+
+  <button id="searchBtn">Search Bills</button>
+
+  <hr>
+
+  <div id="billResults"></div>
+
+  <hr>
+
+  <label>Generate:
+    <select id="mode">
+      <option value="brief">Policy Brief</option>
+      <option value="email">Email Script</option>
+    </select>
+  </label>
+  <button id="generateBtn">Generate with GPT</button>
+
+  <hr>
+
+  <div id="outputArea"></div>
+
+  <script src="../static/script.js"></script>
+</body>
+</html>
 
