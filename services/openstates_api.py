@@ -4,6 +4,9 @@ import os
 OPENSTATES_API_KEY = os.getenv("OPENSTATES_API_KEY")
 
 def search_state_bills(state_code, keyword):
+    """
+    Returns top 5 bills from OpenStates that match 'keyword' in a given state jurisdiction.
+    """
     url = "https://v3.openstates.org/bills"
     params = {
         "jurisdiction": state_code,
@@ -17,4 +20,3 @@ def search_state_bills(state_code, keyword):
         return response.json().get("results", [])
     else:
         return {"error": response.text}
-
